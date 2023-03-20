@@ -1,10 +1,10 @@
-# EDNANTUR-TURISMO
+# EDNANTUR TURISMO
 
-Este é um projeto de um site de turismo que oferece serviços de aluguel de carros, passagens aéreas, pacotes turísticos e feiras.
+Este é um projeto de um site de turismo que oferece serviços de aluguel de onibus, viajens para feiras.
 
 ## Objetivo
 
-O objetivo deste projeto é criar um site dinâmico e responsivo que possa atender às necessidades dos clientes da EDNANTUR-TURISMO.
+O objetivo deste projeto é criar um site dinâmico e responsivo que possa atender às necessidades dos clientes da EDNANTUR TURISMO.
 
 ## Funcionalidades
 
