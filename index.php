@@ -20,7 +20,7 @@
 
     </td>
     <td width="1055" height="450" background="img/top bkg.jpg">
-	
+  
     <table height="450" border="0" cellspacing="0" cellpadding="0" align="center">
   <tr>
     <td height="450"align="right">
@@ -64,7 +64,7 @@
     <td rowspan="2" bgcolor="#FFFFFF">&nbsp;</td>
     
     <td align="center" valign="middle">
-            	<iframe frameborder="0" align="top" src="inicio.php" width="100%" height="900px" scrolling="auto" name="ifr"></iframe>
+              <iframe frameborder="0" align="top" src="inicio.php" width="100%" height="900px" scrolling="auto" name="ifr"></iframe>
     </td>
     
     <td rowspan="2" bgcolor="#FFFFFF">&nbsp;</td>
@@ -75,9 +75,9 @@
       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td colspan="2" align="center" valign="middle" bgcolor="#CCCCCC">
-          	<strong>
-            	<font face="Arial, Helvetica, sans-serif">
-                	<a target="ifr" href="inicio.php">Home</a> | <a href="empresa.php" target="ifr">A&nbsp;empresa</a> | <a href="frota.php" target="ifr">Nossa frota</a> | <a href="passagem.php" target="ifr">Venda de Passagens</a> | <a href="aluguel.php" target="ifr">Fretamento de ônibus</a> | <a href="entrar.php" target="ifr">Cadastre-se</a> | <a href="fale.php" target="ifr">Fale conosco</a>
+            <strong>
+              <font face="Arial, Helvetica, sans-serif">
+                  <a target="ifr" href="inicio.php">Home</a> | <a href="empresa.php" target="ifr">A&nbsp;empresa</a> | <a href="frota.php" target="ifr">Nossa frota</a> | <a href="passagem.php" target="ifr">Venda de Passagens</a> | <a href="aluguel.php" target="ifr">Fretamento de ônibus</a> | <a href="entrar.php" target="ifr">Cadastre-se</a> | <a href="fale.php" target="ifr">Fale conosco</a>
                     </font>
             </strong>
          </td>
@@ -100,7 +100,7 @@
             </tr>
             <tr>
               <td class="fonte">
-              	<p><a href="http://www.joaootavio.com.br/clientes/criarte/">&nbsp;     <img border="0" src="img/ACESSO%20RESTRITO.png" alt="entrar" width="126" height="44" align="absmiddle" /></a></p></td>
+                <p><a href="http://www.joaootavio.com.br/clientes/criarte/">&nbsp;     <img border="0" src="img/ACESSO%20RESTRITO.png" alt="entrar" width="126" height="44" align="absmiddle" /></a></p></td>
             </tr>
           </table></td>
           <td width="25%" align="left" valign="top" background="img/barra.jpg" bgcolor="#003399">

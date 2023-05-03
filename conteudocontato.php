@@ -6,7 +6,7 @@
 <style type="text/css">
 <!--
 .arial {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 -->
 </style>
@@ -24,23 +24,20 @@
 <?php
 include("conectar.php");
 $sql = MYSQL_QUERY("select * from contato") or die(mysql_error());
-while ($campo = mysql_fetch_row($sql))
-{
-	if ($campo[7]=="s")
-	{
-		$color="bordercolorlight='#00CC33' bgcolor='#B9FFDC'";
-	} else
-	{
-		$color="bordercolorlight='#FF6600' bgcolor='#F9EAD9'";
-	}
-echo"
+while ($campo = mysql_fetch_row($sql)) {
+  if ($campo[7] == "s") {
+    $color = "bordercolorlight='#00CC33' bgcolor='#B9FFDC'";
+  } else {
+    $color = "bordercolorlight='#FF6600' bgcolor='#F9EAD9'";
+  }
+  echo "
 
   <tr>
-  	<td bgcolor='#FFCC00'><a href='lerc.php?cd=".$campo[0]."'>".$campo[0]."</a></td>
-    <td ".$color."><a href='lerc.php?cd=".$campo[0]."'>".$campo[1]."</a></td>
-    <td ".$color."><a href='lerc.php?cd=".$campo[0]."'>".$campo[2]."</a></td>
-	<td ".$color."><a href='lerc.php?cd=".$campo[0]."'>".$campo[7]."</a></td>
-    <td bgcolor='#FF0000' align='center' valign='middle'><a href='delete.php?cd=".$campo[0]."'><img src='img/delete.png' height='25' /></td>
+  	<td bgcolor='#FFCC00'><a href='lerc.php?cd=" . $campo[0] . "'>" . $campo[0] . "</a></td>
+    <td " . $color . "><a href='lerc.php?cd=" . $campo[0] . "'>" . $campo[1] . "</a></td>
+    <td " . $color . "><a href='lerc.php?cd=" . $campo[0] . "'>" . $campo[2] . "</a></td>
+	<td " . $color . "><a href='lerc.php?cd=" . $campo[0] . "'>" . $campo[7] . "</a></td>
+    <td bgcolor='#FF0000' align='center' valign='middle'><a href='delete.php?cd=" . $campo[0] . "'><img src='img/delete.png' height='25' /></td>
   </tr>
 
 ";

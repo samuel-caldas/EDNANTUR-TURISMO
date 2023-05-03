@@ -6,7 +6,7 @@
 <style type="text/css">
 <!--
 .textotabela {
-	text-align: left;
+  text-align: left;
 }
 -->
 </style>
@@ -17,7 +17,7 @@
 
 <table width="100%" border="1" cellspacing="1" cellpadding="1" align="center">
   <tr>
-  	<font face="Arial, Helvetica, sans-serif">
+    <font face="Arial, Helvetica, sans-serif">
     <td width="5%" align='center' valign='middle' bgcolor="#FFCC00"><strong>Cod</strong></td>
     <td width="10%" align='left' valign='middle' bgcolor="#CCCCCC"><strong>Orçamento de:</strong></td>
     <td width="5%" align="left" valign="middle" bgcolor="#CCCCCC"><strong>Carro</strong></td>
@@ -33,25 +33,24 @@
   </tr>
 <?php
 include("conectar.php");
-$sql = MYSQL_QUERY("select * from frete where cd=".$_GET["cd"]) or die(mysql_error());
-while ($campo = mysql_fetch_row($sql))
-{
+$sql = MYSQL_QUERY("select * from frete where cd=" . $_GET["cd"]) or die(mysql_error());
+while ($campo = mysql_fetch_row($sql)) {
 
-				$resultado= mysql_query("UPDATE  frete SET  lido= 's' WHERE  cd=".$campo[0]) or die (mysql_error());
-echo"
+  $resultado = mysql_query("UPDATE  frete SET  lido= 's' WHERE  cd=" . $campo[0]) or die(mysql_error());
+  echo "
 
   <tr>
-  	<td bgcolor='#FFCC00'>".$campo[0]."</td>
-    <td>".$campo[1]."</td>
-    <td>".$campo[2]."</td>
-	<td>".$campo[3]."</td>
-	<td>".$campo[4]."</td>
-	<td>".$campo[5]."</td>
-	<td>".$campo[6]."</td>
-	<td>".$campo[7]."</td>
-	<td>".$campo[8]."</td>
-	<td>".$campo[9]."</td>
-	<td>".$campo[10]."</td>
+  	<td bgcolor='#FFCC00'>" . $campo[0] . "</td>
+    <td>" . $campo[1] . "</td>
+    <td>" . $campo[2] . "</td>
+	<td>" . $campo[3] . "</td>
+	<td>" . $campo[4] . "</td>
+	<td>" . $campo[5] . "</td>
+	<td>" . $campo[6] . "</td>
+	<td>" . $campo[7] . "</td>
+	<td>" . $campo[8] . "</td>
+	<td>" . $campo[9] . "</td>
+	<td>" . $campo[10] . "</td>
   </tr>
 ";
 }

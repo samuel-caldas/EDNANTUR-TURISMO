@@ -6,8 +6,8 @@
 <style type="text/css">
 <!--
 .arial {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 -->
 </style>

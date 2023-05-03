@@ -8,16 +8,15 @@
 <table width="50%" border="0" cellspacing="0" cellpadding="0">
 <tr>
 <?php
-$cd=$_GET["cd"];
-	include_once("conectar.php");
-		$sql= MYSQL_QUERY("select * from fotos where cd=".$cd) or die(mysql_error());
-		while ($campo = mysql_fetch_row($sql))
-		{	
-			$img="fotos/img/".$campo[2];
-					echo("	<td>
-							<img src='".$img."' height='480' />
+$cd = $_GET["cd"];
+include_once("conectar.php");
+$sql = MYSQL_QUERY("select * from fotos where cd=" . $cd) or die(mysql_error());
+while ($campo = mysql_fetch_row($sql)) {
+	$img = "fotos/img/" . $campo[2];
+	echo ("	<td>
+							<img src='" . $img . "' height='480' />
 							</td>");
-		}
+}
 
 ?>
 </tr>

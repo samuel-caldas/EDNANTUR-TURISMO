@@ -8,8 +8,8 @@
 <p><img src="img/load.gif" alt="" width="400" height="400" align="absmiddle" /></p>
 <?php
 include("conectar.php");
-$cd=$_GET["cd"];
-$sql="DELETE FROM orcamento WHERE cd=".$cd;
+$cd = $_GET["cd"];
+$sql = "DELETE FROM orcamento WHERE cd=" . $cd;
 MYSQL_QUERY($sql) or die(mysql_error());
 ?>
 <script>  

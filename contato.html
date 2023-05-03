@@ -1,60 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<title>DreamTemplate</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<style type="text/css">
-<!--
-@import url("style.css");
--->
-</style>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript">
-// <![CDATA[
-jQuery(document).ready(function(){
-	$('#contactform').submit(function(){				  
-		var action = $(this).attr('action');
-		$.post(action, { 
-			name: $('#name').val(),
-			email: $('#email').val(),
-			company: $('#company').val(),
-			subject: $('#subject').val(),
-			message: $('#message').val()
-		},
-			function(data){
-				$('#contactform #submit').attr('disabled','');
-				$('.response').remove();
-				$('#contactform').before('<p class="response">'+data+'</p>');
-				$('.response').slideDown();
-				if(data=='Message sent!') $('#contactform').slideUp();
-			}
-		); 
-		return false;
-	});
-});
+  <title>DreamTemplate</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+    <!--
+    @import url("style.css");
+    -->
+  </style>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+    // <![CDATA[
+    jQuery(document).ready(function () {
+      $('#contactform').submit(function () {
+        var action = $(this).attr('action');
+        $.post(action, {
+          name: $('#name').val(),
+          email: $('#email').val(),
+          company: $('#company').val(),
+          subject: $('#subject').val(),
+          message: $('#message').val()
+        },
+          function (data) {
+            $('#contactform #submit').attr('disabled', '');
+            $('.response').remove();
+            $('#contactform').before('<p class="response">' + data + '</p>');
+            $('.response').slideDown();
+            if (data == 'Message sent!') $('#contactform').slideUp();
+          }
+        );
+        return false;
+      });
+    });
 // ]]>
-</script>
+  </script>
 </head>
+
 <body>
-<form action="contact.php" method="post" id="contactform">
-          <ol>
-            <li>
-              <input id="name" name="name" class="text" value="First Name *" />
-            </li>
-            <li>
-              <input id="email" name="email" class="text" value="Your e-mail *" />
-            </li>
-            <li>
-              <input id="Website" name="Website" class="text" value="Company Name" />
-            </li>
-            <li>
-              <textarea id="message" name="message" rows="6" cols="50"></textarea>
-            </li>
-            <li class="buttons">
-              <input type="image" name="imageField" id="imageField" src="images/send.gif" class="send" />
-              <div class="clr"></div>
-            </li>
-          </ol>
-        </form>
+  <form action="contact.php" method="post" id="contactform">
+    <ol>
+      <li>
+        <input id="name" name="name" class="text" value="First Name *" />
+      </li>
+      <li>
+        <input id="email" name="email" class="text" value="Your e-mail *" />
+      </li>
+      <li>
+        <input id="Website" name="Website" class="text" value="Company Name" />
+      </li>
+      <li>
+        <textarea id="message" name="message" rows="6" cols="50"></textarea>
+      </li>
+      <li class="buttons">
+        <input type="image" name="imageField" id="imageField" src="images/send.gif" class="send" />
+        <div class="clr"></div>
+      </li>
+    </ol>
+  </form>
 </body>
+
 </html>

@@ -6,7 +6,7 @@
 <style type="text/css">
 <!--
 .arial {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper { width: 960px; }
 #menu .dropdown { width: 250px; }
@@ -14,10 +14,10 @@
 #menu .columns3 { width: 750px; }
 #menu .columns4 { width: 1000px; }
 .arial {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #form5 table tr #message arial {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
     -->
@@ -28,7 +28,7 @@ var caminho =''; jQuery.noConflict();
   </script>
   <script type='text/javascript'>
 /*<![CDATA[*/
-	var jax_live_site = 'http://guacutur.com.br/index.php';
+  var jax_live_site = 'http://guacutur.com.br/index.php';
 /*]]>*/
 </script><script type="text/javascript" src="http://guacutur.com.br/plugins/system/pc_includes/ajax.js"></script>
 <link rel="stylesheet" href="css/screen.css" media="screen" />
@@ -234,7 +234,7 @@ var caminho =''; jQuery.noConflict();
               </tbody>
             </table>
             </td>
-			<td>
+      <td>
             <table class="contorno" style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
               <tbody>
                 <tr style="background-color: #233ba8;">

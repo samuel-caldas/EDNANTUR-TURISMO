@@ -1,1 +1,127 @@
-@charset utf-8;#topbar{background-image:url(imagens/bgplano.png);background-size:100% 100%;border-bottom:#999;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-weight:700;height:50px;left:0;overflow:hidden;position:absolute;top:0;vertical-align:middle;visibility:visible;width:100%}#midle{text-align:right;vertical-align:middle}.estilotextarea4{background-color:#FFF;border:1px solid #000;height:20px;scrollbar-arrow-color:#006;scrollbar-base-color:#003;scrollbar-dark-shadow-color:#369;scrollbar-face-color:#c93;scrollbar-highlight-color:#CCC;scrollbar-shadow-color:#DDD;scrollbar-track-color:#663;text-shadow:#666}body{background-attachment:fixed;background-color:#FFF;background-image:url(imagens/bgluz.png);background-repeat:no-repeat;background-size:100% 100%;font-family:'Times New Roman', Times, serif}ul,ol,dl{margin:0;padding:0}h1,h2,h3,h4,h5,h6,p{margin-top:0;padding-left:15px;padding-right:15px}a img{border:none}a:link{color:#42413C;text-decoration:underline}a:visited{color:#6E6C64;text-decoration:underline}a:hover,a:active,a:focus{text-decoration:none}.container{background:#FFF;margin:0 auto;width:960px}.header{background:#ADB96E}.content{padding:10px 0}.footer{background:none;padding:10px 0}.fltrt{float:right;margin-left:8px}.fltlft{float:left;margin-right:8px}.clearfloat{clear:both;font-size:1px;height:0;line-height:0}.texto{color:#FFF;font-family:Segoe UI, Tahoma, Geneva, sans-serif;font-weight:700}
+@charset utf-8;
+
+#topbar {
+    background-image: url(imagens/bgplano.png);
+    background-size: 100% 100%;
+    border-bottom: #999;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    visibility: visible;
+    width: 100%
+}
+
+#midle {
+    text-align: right;
+    vertical-align: middle
+}
+
+.estilotextarea4 {
+    background-color: #FFF;
+    border: 1px solid #000;
+    height: 20px;
+    scrollbar-arrow-color: #006;
+    scrollbar-base-color: #003;
+    scrollbar-dark-shadow-color: #369;
+    scrollbar-face-color: #c93;
+    scrollbar-highlight-color: #CCC;
+    scrollbar-shadow-color: #DDD;
+    scrollbar-track-color: #663;
+    text-shadow: #666
+}
+
+body {
+    background-attachment: fixed;
+    background-color: #FFF;
+    background-image: url(imagens/bgluz.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Times New Roman', Times, serif
+}
+
+ul,
+ol,
+dl {
+    margin: 0;
+    padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+a img {
+    border: none
+}
+
+a:link {
+    color: #42413C;
+    text-decoration: underline
+}
+
+a:visited {
+    color: #6E6C64;
+    text-decoration: underline
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none
+}
+
+.container {
+    background: #FFF;
+    margin: 0 auto;
+    width: 960px
+}
+
+.header {
+    background: #ADB96E
+}
+
+.content {
+    padding: 10px 0
+}
+
+.footer {
+    background: none;
+    padding: 10px 0
+}
+
+.fltrt {
+    float: right;
+    margin-left: 8px
+}
+
+.fltlft {
+    float: left;
+    margin-right: 8px
+}
+
+.clearfloat {
+    clear: both;
+    font-size: 1px;
+    height: 0;
+    line-height: 0
+}
+
+.texto {
+    color: #FFF;
+    font-family: Segoe UI, Tahoma, Geneva, sans-serif;
+    font-weight: 700
+}

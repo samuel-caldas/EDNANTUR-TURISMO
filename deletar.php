@@ -8,9 +8,9 @@
 <p><img src="img/load.gif" alt="" width="400" height="400" align="absmiddle" /></p>
 <?php
 include("conectar.php");
-$l=$_GET["l"];
-$s=$_GET["s"];
-$sql="DELETE FROM login WHERE n='".$l."' and s='".$s."'";
+$l = $_GET["l"];
+$s = $_GET["s"];
+$sql = "DELETE FROM login WHERE n='" . $l . "' and s='" . $s . "'";
 MYSQL_QUERY($sql) or die(mysql_error());
 ?>
 <script>  

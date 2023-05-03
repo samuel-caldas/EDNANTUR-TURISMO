@@ -22,22 +22,21 @@
   </tr>
 <?php
 include("conectar.php");
-$sql = MYSQL_QUERY("select * from contato where cd=".$_GET["cd"]) or die(mysql_error());
-while ($campo = mysql_fetch_row($sql))
-{
+$sql = MYSQL_QUERY("select * from contato where cd=" . $_GET["cd"]) or die(mysql_error());
+while ($campo = mysql_fetch_row($sql)) {
 
-				$resultado= mysql_query("UPDATE  contato SET  lido= 's' WHERE  cd=".$campo[0]) or die ("falha na inserção dos dados!");
-echo"
+  $resultado = mysql_query("UPDATE  contato SET  lido= 's' WHERE  cd=" . $campo[0]) or die("falha na inserção dos dados!");
+  echo "
 
   <tr>
-  	<td bgcolor='#FFCC00'>".$campo[0]."</td>
-    <td>".$campo[1]."</td>
-    <td>".$campo[2]."</td>
-	<td>".$campo[3]."</td>
-	<td>".$campo[4]."</td>
-	<td>".$campo[5]."</td>
-	<td>".$campo[6]."</td>
-	<td>".$campo[7]."</td>
+  	<td bgcolor='#FFCC00'>" . $campo[0] . "</td>
+    <td>" . $campo[1] . "</td>
+    <td>" . $campo[2] . "</td>
+	<td>" . $campo[3] . "</td>
+	<td>" . $campo[4] . "</td>
+	<td>" . $campo[5] . "</td>
+	<td>" . $campo[6] . "</td>
+	<td>" . $campo[7] . "</td>
   </tr>
 ";
 }

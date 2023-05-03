@@ -9,17 +9,17 @@
 JS desativado.
 </noscript>
 <script language="JavaScript">
-	function logo(imagem,x,y)
-		{
-				var larguraimg = document.getElementById(imagem).width;
-				var alturaimg = document.getElementById(imagem).height;
-				var larguratela = window.innerWidth;
-				var alturatela = window.innerHeight;
-				var largura = ((larguratela-larguraimg)/x)-1;
-				var altura= ((alturatela-alturaimg)/y)-1;
-				document.getElementById(imagem).vspace=altura;
-				document.getElementById(imagem).hspace=largura;
-		};
+  function logo(imagem,x,y)
+    {
+        var larguraimg = document.getElementById(imagem).width;
+        var alturaimg = document.getElementById(imagem).height;
+        var larguratela = window.innerWidth;
+        var alturatela = window.innerHeight;
+        var largura = ((larguratela-larguraimg)/x)-1;
+        var altura= ((alturatela-alturaimg)/y)-1;
+        document.getElementById(imagem).vspace=altura;
+        document.getElementById(imagem).hspace=largura;
+    };
 </script>
 </head>
 <body style="" onload="logo('cpainel',2,2);" onresize="logo('cpainel',2,2);">

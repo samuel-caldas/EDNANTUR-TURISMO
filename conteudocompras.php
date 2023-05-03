@@ -17,34 +17,31 @@
 
 <table width="100%" border="1" cellspacing="1" cellpadding="1">
   <tr class="arial">
-    <td width="5%" align='center' valign='middle' bgcolor="#FFCC00"><strong>Cod</strong></td>
-    <td width="15%" align="left" valign="middle" bgcolor="#CCCCCC"><strong>Motivo</strong></td>
-    <td align='left' valign='middle' bgcolor="#CCCCCC"><strong>Nome</strong></td>
-    <td width="10%" align="left" valign="middle" bgcolor="#CCCCCC"><strong>Tipo</strong></td>
-    <td width="5%" align="center" valign="middle" bgcolor="#CCCCCC"><strong>Lido</strong></td>
-    <td width="5%" align="center" valign="middle"  bgcolor="#FF0000"><strong>Excluir</strong></td>
+	<td width="5%" align='center' valign='middle' bgcolor="#FFCC00"><strong>Cod</strong></td>
+	<td width="15%" align="left" valign="middle" bgcolor="#CCCCCC"><strong>Motivo</strong></td>
+	<td align='left' valign='middle' bgcolor="#CCCCCC"><strong>Nome</strong></td>
+	<td width="10%" align="left" valign="middle" bgcolor="#CCCCCC"><strong>Tipo</strong></td>
+	<td width="5%" align="center" valign="middle" bgcolor="#CCCCCC"><strong>Lido</strong></td>
+	<td width="5%" align="center" valign="middle"  bgcolor="#FF0000"><strong>Excluir</strong></td>
   </tr>
 <?php
 include("conectar.php");
 $sql = MYSQL_QUERY("select * from compra") or die(myErro("<h1><strong>Falha na Conexão com o Banco de Dados</strong></h1>"));
-while ($campo = mysql_fetch_row($sql))
-{
-	if ($campo[7]=="s")
-	{
-		$color="bordercolorlight='#00CC33' bgcolor='#B9FFDC'";
-	} else
-	{
-		$color="bordercolorlight='#FF6600' bgcolor='#F9EAD9'";
+while ($campo = mysql_fetch_row($sql)) {
+	if ($campo[7] == "s") {
+		$color = "bordercolorlight='#00CC33' bgcolor='#B9FFDC'";
+	} else {
+		$color = "bordercolorlight='#FF6600' bgcolor='#F9EAD9'";
 	}
-echo"
-<a href='lero.php?cd=".$campo[0]."'>
+	echo "
+<a href='lero.php?cd=" . $campo[0] . "'>
   <tr>
-  	<td align='center' valign='middle' bgcolor='#FFCC00'><a href='lercompra.php?cd=".$campo[0]."'>".$campo[0]."</td>
-  	<td align='left' valign='middle' ".$color."><a href='lercompra.php?cd=".$campo[0]."'>".$campo[1]."</td>
-  	<td align='left' valign='middle' ".$color."><a href='lercompra.php?cd=".$campo[0]."'>".$campo[2]."</td>
-  	<td align='left' valign='middle' ".$color."><a href='lercompra.php?cd=".$campo[0]."'>".$campo[8]."</td>
-  	<td align='center' valign='middle' ".$color."><a href='lercompra.php?cd=".$campo[0]."'>".$campo[7]."</td>
-    <td bgcolor='#FF0000' align='center' valign='middle'><a href='deletecompra.php?cd=".$campo[0]."'><img src='img/delete.png' height='25' /></a></td>
+  	<td align='center' valign='middle' bgcolor='#FFCC00'><a href='lercompra.php?cd=" . $campo[0] . "'>" . $campo[0] . "</td>
+  	<td align='left' valign='middle' " . $color . "><a href='lercompra.php?cd=" . $campo[0] . "'>" . $campo[1] . "</td>
+  	<td align='left' valign='middle' " . $color . "><a href='lercompra.php?cd=" . $campo[0] . "'>" . $campo[2] . "</td>
+  	<td align='left' valign='middle' " . $color . "><a href='lercompra.php?cd=" . $campo[0] . "'>" . $campo[8] . "</td>
+  	<td align='center' valign='middle' " . $color . "><a href='lercompra.php?cd=" . $campo[0] . "'>" . $campo[7] . "</td>
+    <td bgcolor='#FF0000' align='center' valign='middle'><a href='deletecompra.php?cd=" . $campo[0] . "'><img src='img/delete.png' height='25' /></a></td>
   </tr>
   </a>
 ";

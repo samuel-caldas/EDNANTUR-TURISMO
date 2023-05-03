@@ -5,9 +5,9 @@
 <title>Mensagens</title>
 <style type="text/css">
 .arial {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #FFF;
 }
 </style>
 </head>

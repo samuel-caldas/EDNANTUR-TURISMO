@@ -6,7 +6,7 @@
 <style type="text/css">
 <!--
 .arial {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 -->
 </style>
@@ -26,22 +26,19 @@
 <?php
 include("conectar.php");
 $sql = MYSQL_QUERY("select * from contato") or die(mysql_error());
-while ($campo = mysql_fetch_row($sql))
-{
-	if ($campo[9]="s")
-	{
-		$color="bordercolorlight='#00CC33' bgcolor='#B9FFDC'";
-	} else
-	{
-		$color="bordercolorlight='#FF6600' bgcolor='#F9EAD9'";
-	}
-echo"
-  <tr ".$color.">
-  	<td>".$campo[0]."</td>
-    <td>".$campo[1]."</td>
-    <td>".$campo[2]."</td>
-	<td>".$campo[7]."</td>
-    <td align='center' valign='middle'><a href='delete.php?cd=".$campo[0]."'><img src='img/delete.png' width='17' height='20' /></a></td>
+while ($campo = mysql_fetch_row($sql)) {
+  if ($campo[9] = "s") {
+    $color = "bordercolorlight='#00CC33' bgcolor='#B9FFDC'";
+  } else {
+    $color = "bordercolorlight='#FF6600' bgcolor='#F9EAD9'";
+  }
+  echo "
+  <tr " . $color . ">
+  	<td>" . $campo[0] . "</td>
+    <td>" . $campo[1] . "</td>
+    <td>" . $campo[2] . "</td>
+	<td>" . $campo[7] . "</td>
+    <td align='center' valign='middle'><a href='delete.php?cd=" . $campo[0] . "'><img src='img/delete.png' width='17' height='20' /></a></td>
   </tr>
 ";
 }

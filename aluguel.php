@@ -24,7 +24,7 @@ Para solicitar um orçamento, preencha o formulário ou entre em contato com  no
     </table>
     </td>
     <td width="60%" align="center" valign="middle">
-	<form action="controle.php" method="get" enctype="application/x-www-form-urlencoded" name="frete">
+  <form action="controle.php" method="get" enctype="application/x-www-form-urlencoded" name="frete">
     <input name="tipo" type="hidden" value="frete" align="middle" />
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>

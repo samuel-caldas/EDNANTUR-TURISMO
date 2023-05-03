@@ -7,16 +7,16 @@
 <body>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center" valign="middle"><img src="load.gif" width="400" height="400"align="middle" /></td>
+	<td align="center" valign="middle"><img src="load.gif" width="400" height="400"align="middle" /></td>
   </tr>
  </table>
 		<?php
-				include_once("conectar.php");
-				$nome=$_GET["nome"];
-				$senha=$_GET["senha"];
-				$inserir= "INSERT INTO login ( n, s) VALUES ('".$nome."', '".$senha."')"; 
-				mysql_query($inserir) or die ("falha na inserção dos dados!");
-				echo ("dados inseridos com sucesso!");
+		include_once("conectar.php");
+		$nome = $_GET["nome"];
+		$senha = $_GET["senha"];
+		$inserir = "INSERT INTO login ( n, s) VALUES ('" . $nome . "', '" . $senha . "')";
+		mysql_query($inserir) or die("falha na inserção dos dados!");
+		echo ("dados inseridos com sucesso!");
 		?>
 		<script>
 			history.back();

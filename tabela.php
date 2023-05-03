@@ -19,7 +19,7 @@ var caminho =''; jQuery.noConflict();
   </script>
   <script type='text/javascript'>
 /*<![CDATA[*/
-	var jax_live_site = 'http://guacutur.com.br/index.php';
+  var jax_live_site = 'http://guacutur.com.br/index.php';
 /*]]>*/
 </script><script type="text/javascript" src="http://guacutur.com.br/plugins/system/pc_includes/ajax.js"></script>
 

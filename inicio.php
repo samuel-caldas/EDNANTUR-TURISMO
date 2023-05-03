@@ -4,55 +4,55 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Home</title>
 <link rel='stylesheet' href='css/1.css' type='text/css' /> 
-  			<link rel='stylesheet' href='css/2.css' type='text/css' /> 
-  			<link rel='stylesheet' href='css/3.css' type='text/css' /> 
-				<script type='text/javascript' src='js/mootools-release-1.11.js'></script>
-				<script type='text/javascript' src='js/jquery.js'></script>
-				<script type='text/javascript' src='js/jquery.jcarousel.pack.js'></script>					
-				<script type='text/javascript'> 
+        <link rel='stylesheet' href='css/2.css' type='text/css' /> 
+        <link rel='stylesheet' href='css/3.css' type='text/css' /> 
+        <script type='text/javascript' src='js/mootools-release-1.11.js'></script>
+        <script type='text/javascript' src='js/jquery.js'></script>
+        <script type='text/javascript' src='js/jquery.jcarousel.pack.js'></script>					
+        <script type='text/javascript'> 
 var YtSettings = { tplurl: '/templates/guacu', color: 'blue' };
 var caminho =''; jQuery.noConflict();
-		window.addEvent('domready', function() {
-			SqueezeBox.initialize({});
-			$$('a.modal').each(function(el) {
-				el.addEvent('click', function(e) {
-					new Event(e).stop();
-					SqueezeBox.fromElement(el);
-				});
-			});
-		});
+    window.addEvent('domready', function() {
+      SqueezeBox.initialize({});
+      $$('a.modal').each(function(el) {
+        el.addEvent('click', function(e) {
+          new Event(e).stop();
+          SqueezeBox.fromElement(el);
+        });
+      });
+    });
 window.addEvent('domready',function(){var Slider94 = new DJImageSlider({id: '94', slider_type: 0, slide_size: 240, visible_slides: 1, show_buttons: 0, show_arrows: 2, preload: 1000},{auto: 1, transition: Fx.Transitions.Expo.easeInOut, duration: 1000, delay: 4000})});
 function mycarousel_initCallback(carousel)
-			{
-					// Disable autoscrolling if the user clicks the prev or next button.
-					carousel.buttonNext.bind('click', function() {
-						carousel.startAuto(0);
-					});
-				
-					carousel.buttonPrev.bind('click', function() {
-						carousel.startAuto(0);
-				});			
-					// Pause autoscrolling if the user moves with the cursor over the clip.
-					carousel.clip.hover(function() {
-						carousel.stopAuto();
-					}, function() {
-						carousel.startAuto();
-					});
-				};
-				
-				jQuery(document).ready(function() {
-					jQuery('#mycarousel').jcarousel({
-						auto: 3,
-						scroll:1,
-						wrap: 'last',
-						animation: 'slow',
-						initCallback: mycarousel_initCallback
-					});
-				});
-  			</script> 
-				<script type='text/javascript'>/*<![CDATA[*/var ajax_live_site = 'http://guacutur.com.br/index.php';/*]]>*/</script>
+      {
+          // Disable autoscrolling if the user clicks the prev or next button.
+          carousel.buttonNext.bind('click', function() {
+            carousel.startAuto(0);
+          });
+        
+          carousel.buttonPrev.bind('click', function() {
+            carousel.startAuto(0);
+        });			
+          // Pause autoscrolling if the user moves with the cursor over the clip.
+          carousel.clip.hover(function() {
+            carousel.stopAuto();
+          }, function() {
+            carousel.startAuto();
+          });
+        };
+        
+        jQuery(document).ready(function() {
+          jQuery('#mycarousel').jcarousel({
+            auto: 3,
+            scroll:1,
+            wrap: 'last',
+            animation: 'slow',
+            initCallback: mycarousel_initCallback
+          });
+        });
+        </script> 
+        <script type='text/javascript'>/*<![CDATA[*/var ajax_live_site = 'http://guacutur.com.br/index.php';/*]]>*/</script>
                 <script type='text/javascript' src='js/ajax.js'></script> 
-				<script language='javascript' type='text/javascript'> 
+        <script language='javascript' type='text/javascript'> 
 var freq='always' ;
 var autohide=['no', 10];
 if (parseInt(freq)!=NaN);
@@ -225,7 +225,7 @@ initibox()
 
     #status{
 
-		width:100px
+    width:100px
         outline:none;
 
     }
@@ -240,24 +240,24 @@ initibox()
         border: solid 2px #DFDFDF;
     }
 #form5 table tr td h1 strong {
-	font-family: "Arial Black", Gadget, sans-serif;
-	color: #36689A;
-	font-size: x-large;
-	text-align: center;
-	font-weight: bold;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #36689A;
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
 }
 #form5 table tr td p strong {
-	text-align: center;
+  text-align: center;
 }
 #form5 table tr td h1 strong {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #Orçar1 table tr td {
-	color: #039;
-	font-size: 25px;
+  color: #039;
+  font-size: 25px;
 }
 .arial {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>
 <link rel="stylesheet" href="css/screen.css" media="screen" />
@@ -273,50 +273,48 @@ initibox()
 
 
 <ul class='jcarousel-skin-tango' id='mycarousel' name="mycarousel">
-								
+                
 <!-- -------------------------------------------------------------------------------------------------------------------------------- -->			
 <?php
-		include_once("conectar.php");
-		$sql= MYSQL_QUERY("select * from pacotes order by ds") or die(mysql_error());
-		while ($campo = mysql_fetch_row($sql)){
-					$txt=$campo[1];
-					$dsaida=$campo[3];
-					$dretorno=$campo[5];
-		$y=1;
-		$conteudo="select * from fotos where cat='pacotes' and id='".$campo[0]."'";
-		$consulta= MYSQL_QUERY($conteudo) or die(mysql_error());
-			while ($imagem = mysql_fetch_row($consulta))
-			{	
-					if ($y=1)
-					{
-						$img="fotos/img/".$imagem[2];
-						$y=$y+1;
-					}
-			 }
-echo("
+include_once("conectar.php");
+$sql = MYSQL_QUERY("select * from pacotes order by ds") or die(mysql_error());
+while ($campo = mysql_fetch_row($sql)) {
+  $txt = $campo[1];
+  $dsaida = $campo[3];
+  $dretorno = $campo[5];
+  $y = 1;
+  $conteudo = "select * from fotos where cat='pacotes' and id='" . $campo[0] . "'";
+  $consulta = MYSQL_QUERY($conteudo) or die(mysql_error());
+  while ($imagem = mysql_fetch_row($consulta)) {
+    if ($y = 1) {
+      $img = "fotos/img/" . $imagem[2];
+      $y = $y + 1;
+    }
+  }
+  echo ("
 					<li>
-						<a href='pacotes.php?cod=".$campo[0]."'>
+						<a href='pacotes.php?cod=" . $campo[0] . "'>
 						<table border='0' cellspacing='0' cellpadding='0' >
 						  <tr>
-							<td align='center' valign='middle'><img width=180 height=120 src='".$img."' border='1'/></td>
+							<td align='center' valign='middle'><img width=180 height=120 src='" . $img . "' border='1'/></td>
 						  </tr>
 						  <tr>
-							<td align='center' valign='middle'><div class='dados'><div class='title'><strong>".$txt."</strong></div></div></td>
+							<td align='center' valign='middle'><div class='dados'><div class='title'><strong>" . $txt . "</strong></div></div></td>
 						  </tr>
 						  <tr>
-							<td align='center' valign='middle'><div class='bgsaida'>".$dsaida."</div>	</td>
+							<td align='center' valign='middle'><div class='bgsaida'>" . $dsaida . "</div>	</td>
 						  </tr>
 						  <tr>
-							<td align='center' valign='middle'><div class='bgretorno'>".$dretorno."</div></td>
+							<td align='center' valign='middle'><div class='bgretorno'>" . $dretorno . "</div></td>
 						  </tr>
 						</table>
 						</a>
 					</li>
 
 						");
- }                               
+}
 
-		
+
 ?>
 </ul>
     </td>
@@ -463,38 +461,41 @@ echo("
   </tr>
   <tr>
 <?php
-if(!$fp=fopen("http://economia.uol.com.br/cotacoes/" ,"r" )) { 
-		echo "Erro ao abrir a página de cotação";     
-		 exit;
-		 }
+if (!$fp = fopen("http://economia.uol.com.br/cotacoes/", "r")) {
+  echo "Erro ao abrir a página de cotação";
+  exit;
+}
 $conteudo = "";
-while(!feof($fp)) 
-{
-$conteudo .= fgets($fp,1024); 
-}fclose($fp);
-$cont =0;
+while (!feof($fp)) {
+  $conteudo .= fgets($fp, 1024);
+}
+fclose($fp);
+$cont = 0;
 preg_match_all("/([0-9],[0-9]{3,}).*([0-9],[0-9]{3,})/", $conteudo, $saida, PREG_SET_ORDER);
-foreach ($saida as $saida2)
-{
- $taxaCompra = $saida2[1];
- $taxaVenda = $saida2[2];
-switch($cont){
- case 2: echo "<td>Compra: R$ $taxaCompra<br />
-				Venda :  R$ $taxaVenda</td>"; 
-				break;
- case 3: echo "<td>Compra: R$ $taxaCompra<br />
-				Venda :  R$ $taxaVenda</td>"; 
-				break;
- case 4: echo "<td>Compra: R$ $taxaCompra<br />
-				Venda :  R$ $taxaVenda</td>"; 
-				break;
- case 5: echo "<td>Compra: R$ $taxaCompra<br />
-				Venda :  R$ $taxaVenda</td>"; 
-				break;
-	}
-	$cont = $cont+1;
-	}
-	?>
+foreach ($saida as $saida2) {
+  $taxaCompra = $saida2[1];
+  $taxaVenda = $saida2[2];
+  switch ($cont) {
+    case 2:
+      echo "<td>Compra: R$ $taxaCompra<br />
+				Venda :  R$ $taxaVenda</td>";
+      break;
+    case 3:
+      echo "<td>Compra: R$ $taxaCompra<br />
+				Venda :  R$ $taxaVenda</td>";
+      break;
+    case 4:
+      echo "<td>Compra: R$ $taxaCompra<br />
+				Venda :  R$ $taxaVenda</td>";
+      break;
+    case 5:
+      echo "<td>Compra: R$ $taxaCompra<br />
+				Venda :  R$ $taxaVenda</td>";
+      break;
+  }
+  $cont = $cont + 1;
+}
+?>
   </tr>
 </table>
             </td>

@@ -9,8 +9,8 @@
 <p><img src="img/load.gif" width="400" height="400" align="absmiddle" /></p>
 <?php
 include("conectar.php");
-$cd=$_GET["cd"];
-$sql="DELETE FROM frete WHERE cd=".$cd;
+$cd = $_GET["cd"];
+$sql = "DELETE FROM frete WHERE cd=" . $cd;
 MYSQL_QUERY($sql) or die(myErro("<h1><strong>Falha na Conexão com o Banco de Dados</strong></h1>"));
 ?>
 <script>  
